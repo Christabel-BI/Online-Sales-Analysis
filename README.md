@@ -8,7 +8,6 @@
 - Steps Used to Achieve the Analysis
 - DAX Measures Created
 - Visualizations and Insights
-- How to Run the Project
 - Conclusions
 
 ### Project overview
@@ -58,12 +57,12 @@ Data Fields:
 - Imported the dataset into Power BI.
 - Cleaned and transformed data using Power Query:
 Removed duplicates.
-Checked for missing or erroneous data.
-Ensured data types were consistent (e.g., numerical, text, date).
+- Checked for missing or erroneous data.
+- Ensured data types were consistent (e.g., numerical, text, date).
 2. Data Modeling
-Established relationship between the table and date table created.
+- Established relationship between the table and date table created.
 3. DAX Measures Creation
-Created measures to perform calculations like total revenue, average order value, and category contributions. See DAX Measures Created for detailed formulas.
+- Created measures to perform calculations like total revenue, average order value, and category contributions. See DAX Measures Created for detailed formulas.
 4. Dashboard Design
 Built an interactive dashboard showcasing:
 Total revenue by product category and product.
@@ -90,18 +89,35 @@ Top 5 performing products.
 12. `Total Transactions = DISTINCTCOUNT('Online Sales Data'[Transaction ID])`
 
 
-Visualizations and Insights
+#### Visualizations and Insights
 1. Revenue Contribution by Product Category
 A bar chart was used to highlight the revenue contribution of each product category.
-Insight: Electronics contributes the highest revenue, followed by Furniture.
+Insight: Electronics contributes the highest revenue, followed by Home appliances. This indicates a strong demand in these categories.
 2. Average Order Value (AOV)
 A card visualization showed the overall AOV.
-Insight: The AOV suggests customers typically spend around $X per order.
-3. Top 5 Products by Revenue
+Insight: The AOV suggests customers typically spend around $335.70 per order.
+3. A horizontal bar chart displayed the Total Units sold by product category.
+Insight: Clothing followed by books and sports accounts for the highest Total units sold.
+4. Top 5 Products by units sold
 A horizontal bar chart displayed the top-performing products.
-Insight: Product A and Product B account for 40% of total sales.
-4. Category Contribution
-A donut chart was used to show the percentage share of each category in total revenue.
-Insight: Electronics dominate with 45% of total revenue, indicating a strong demand in this category.
+Insight: Product Nike Air force accounts for the highest units sold.
+5. Category Contribution
+A donut chart was used to show the percentage share of each Area in total revenue.
+Insight: North America dominate with 45.73% of total revenue which is $36,800, indicating a strong demand from this Area.
+6. Revenue Growth Rate by Month.
+A line chart dispalyed the revenue growth by month.
+Insight: Sales experienced a sharp decline from March and continued to May.
+7. A donut chart was used to show the distribution of payment method.
+Insight: Credit card accounts for 63.5% 0f the total payment method. This indicates that customers pay mostly with credit card.
+8. Total units sold by region
+A horizontal bar chart was used to display the total units sold by area
+Insight: Asia accounts for 233 Total units sold followed by North America which is 180 units.
+This indicates that customers from Asia buy more of clothing and Sports product category's
+
+#### Conclusions
+This analysis provides a comprehensive understanding of online sales performance, highlighting areas of strength and opportunities for improvement. 
+It equips stakeholders with the insights needed to optimize product strategies and allocate resources effectively.
+
+
 
 
