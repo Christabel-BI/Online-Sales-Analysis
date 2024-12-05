@@ -1,12 +1,12 @@
 # Sales Performance Analysis with Power BI
 
 ## Table of Contents
-- [Project Overview](#project-overview)
+- Project Overview
 - Project Objectives
 - Dataset Overview
-- Key Research Problems
+- [Key Research Problems](#key-research-problems)
 - Steps Used to Achieve the Analysis
-- [DAX Measures Created](#dAX-measures-Created)
+- [DAX Measures Created](#dax-measures-created)
 - [Visualizations and Insights](#visualizations-and-insights)
 - [Recommendations](#recommendations)
 - Conclusions
@@ -80,14 +80,14 @@ Top 5 performing products.
 `AOV = DIVIDE(SUM('Online Sales Data'[Total Revenue]), DISTINCTCOUNT('Online Sales Data'[Transaction ID]))`
 4. product Category Contribution
 `Category Contribution = DIVIDE([Revenue by Product Category], [Total Revenue], 0)`
-5. `Total Units Sold = SUM('Online Sales Data'[Units Sold])`
-6. `Units Sold by Category = CALCULATE(SUM('Online Sales Data'[Units Sold]), ALLEXCEPT('Online Sales Data', 'Online Sales Data'[Product Category]))`
-7. `Monthly Revenue = CALCULATE([Total Revenue], DATESMTD('DateTable'[Date]))`
-8. `Quarterly Units Sold = CALCULATE([Total Units Sold], DATESQTD('DateTable'[Date]))`
-9. `Revenue Growth Rate = DIVIDE(([Total Revenue] - CALCULATE([Total Revenue], PREVIOUSMONTH('DateTable'[Date]))), CALCULATE([Total Revenue], PREVIOUSMONTH('DateTable'[Date])))`
-10. `Payment Method Percentage = DIVIDE([Total Revenue], CALCULATE([Total Revenue], ALL('Online Sales Data'[Payment Method])), 0)`
-11. `Revenue by Region = CALCULATE([Total Revenue], ALLEXCEPT('Online Sales Data', 'Online Sales Data'[Region]))`
-12. `Total Transactions = DISTINCTCOUNT('Online Sales Data'[Transaction ID])`
+5. Total Units Sold = `SUM('Online Sales Data'[Units Sold])`
+6. Units Sold by Category = `CALCULATE(SUM('Online Sales Data'[Units Sold]), ALLEXCEPT('Online Sales Data', 'Online Sales Data'[Product Category]))`
+7. Monthly Revenue = `CALCULATE([Total Revenue], DATESMTD('DateTable'[Date]))`
+8. Quarterly Units Sold = `CALCULATE([Total Units Sold], DATESQTD('DateTable'[Date]))`
+9. Revenue Growth Rate = `DIVIDE(([Total Revenue] - CALCULATE([Total Revenue], PREVIOUSMONTH('DateTable'[Date]))), CALCULATE([Total Revenue], PREVIOUSMONTH('DateTable'[Date])))`
+10. Payment Method Percentage = `DIVIDE([Total Revenue], CALCULATE([Total Revenue], ALL('Online Sales Data'[Payment Method])), 0)`
+11. Revenue by Region = `CALCULATE([Total Revenue], ALLEXCEPT('Online Sales Data', 'Online Sales Data'[Region]))`
+12. Total Transactions = `DISTINCTCOUNT('Online Sales Data'[Transaction ID])`
 
 ### Visualizations and Insights
 1. Revenue Contribution by Product Category
