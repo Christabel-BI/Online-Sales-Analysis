@@ -31,7 +31,7 @@ Key insights include:
 4. Provide actionable insights through interactive and dynamic dashboards.
 
 ### Dataset Overview
-Source: Kaggle data, 'online sales.csv'.
+Source: Kaggle data, 'online sales data.csv'.
 Data Fields:
 - Transaction ID
 - Product Name
