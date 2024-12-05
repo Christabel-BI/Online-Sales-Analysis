@@ -1,13 +1,14 @@
 # Sales Performance Analysis with Power BI
 
 ## Table of Contents
-- project overview
+- [Project Overview](#project-overview)
 - Project Objectives
 - Dataset Overview
 - Key Research Problems
 - Steps Used to Achieve the Analysis
-- DAX Measures Created
-- Visualizations and Insights
+- [DAX Measures Created](#dAX-measures-Created)
+- [Visualizations and Insights](#visualizations-and-insights)
+- [Recommendations](#recommendations)
 - Conclusions
 
 ### Project overview
@@ -23,13 +24,13 @@ Key insights include:
 - Calculation of Average Order Value (AOV) to understand customer purchasing behavior.
 - Contribution analysis to highlight each category's impact on total revenue.
 - Revenue growth rate by month.
-#### Project Objectives
+### Project Objectives
 1. Evaluate sales performance across different product categories.
 2. Analyze revenue contributions to identify high-performing and low-performing categories.
 3. Calculate metrics like Average Order Value (AOV) to better understand customer behavior.
 4. Provide actionable insights through interactive and dynamic dashboards.
 
-#### Dataset Overview
+### Dataset Overview
 Source: Kaggle data, 'online sales.csv'.
 Data Fields:
 - Transaction ID
@@ -42,7 +43,7 @@ Data Fields:
 - Region
 - Payment method
 
-#### Key Research Problems
+### Key Research Problems
 - What is the revenue contribution of each product category?
 - Which product categories drive the most revenue?
 - What is the total revenue from each region?
@@ -52,7 +53,7 @@ Data Fields:
 - What is the payment method distribution?
 - How can this data inform business decisions for resource allocation?
 
-#### Steps Used to Achieve the Analysis
+### Steps Used to Achieve the Analysis
 1. Data Preparation
 - Imported the dataset into Power BI.
 - Cleaned and transformed data using Power Query:
@@ -72,7 +73,7 @@ Revenue growth by month.
 Total units sold by Region
 Top 5 performing products.
   
-##### DAX Measures Created
+### DAX Measures Created
 1. Total Revenue
 `Total Revenue = SUM('Online Sales Data'[Total Revenue])`
 3. Average Order Value (AOV)
@@ -88,8 +89,7 @@ Top 5 performing products.
 11. `Revenue by Region = CALCULATE([Total Revenue], ALLEXCEPT('Online Sales Data', 'Online Sales Data'[Region]))`
 12. `Total Transactions = DISTINCTCOUNT('Online Sales Data'[Transaction ID])`
 
-
-#### Visualizations and Insights
+### Visualizations and Insights
 1. Revenue Contribution by Product Category
 A bar chart was used to highlight the revenue contribution of each product category.
 Insight: Electronics contributes the highest revenue, followed by Home appliances. This indicates a strong demand in these categories.
@@ -114,7 +114,21 @@ A horizontal bar chart was used to display the total units sold by area
 Insight: Asia accounts for 233 Total units sold followed by North America which is 180 units.
 This indicates that customers from Asia buy more of clothing and Sports product category's
 
-#### Conclusions
+### Recommendations
+1. Focus on High-Performing Product Categories
+- Inventory Management: Ensure adequate stock levels of high-performing categories such as Electronics and Home appliances to avoid stockouts.
+- Marketing: Allocate a larger portion of the marketing budget to promote these categories.
+- Pricing Strategies: Experiment with pricing strategies for high-performing categories to maximize revenue while retaining competitiveness.
+2. Address Low-Performing Product Categories
+- Customer Research: Conduct surveys or analyze customer feedback to understand why these categories underperform.
+- Cross-Promotions: Bundle low-performing categories with high-performing ones to boost sales.
+- Seasonality Analysis: Check if sales for these categories are seasonal and adjust inventory and promotions accordingly.
+3. Optimize for Average Order Value (AOV)
+- Upselling and Cross-Selling: Use recommendation engines to suggest complementary products during checkout to increase AOV.
+- Free Shipping Thresholds: Introduce free shipping for orders above a certain value to encourage larger purchases.
+- Loyalty Programs: Offer rewards or discounts for customers who reach higher spending thresholds.
+
+### Conclusions
 This analysis provides a comprehensive understanding of online sales performance, highlighting areas of strength and opportunities for improvement. 
 It equips stakeholders with the insights needed to optimize product strategies and allocate resources effectively.
 
