@@ -114,6 +114,9 @@ A horizontal bar chart was used to display the total units sold by area
 Insight: Asia accounts for 233 Total units sold followed by North America which is 180 units.
 This indicates that customers from Asia buy more of clothing and Sports product category's
 
+![Online Sales Dashboard](https://github.com/user-attachments/assets/92943b98-e69e-44ac-b17e-ff85eaeaec82)
+
+
 ### Recommendations
 1. Focus on High-Performing Product Categories
 - Inventory Management: Ensure adequate stock levels of high-performing categories such as Electronics and Home appliances to avoid stockouts.
